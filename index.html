@@ -8,31 +8,94 @@
 <meta name="description" content="Pathedge Investment Limited is a business development firm operating as an extension of organisations’ commercial departments, delivering professional growth across industries.">
 
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1f2937;line-height:1.6}
-header{border-bottom:1px solid #e5e7eb;padding:16px 32px;background:#fff;position:sticky;top:0;z-index:100}
-nav{display:flex;justify-content:space-between;align-items:center}
-nav a{text-decoration:none;color:#1f2937;margin-left:20px;font-weight:600}
-.btn{background:#0f172a;color:#fff;padding:10px 18px;border-radius:6px}
-section{max-width:1100px;margin:auto;padding:70px 32px}
-footer{background:#0f172a;color:#fff;text-align:center;padding:40px}
+:root{
+  --gold:#C9A227;
+  --navy:#0B2C4A;
+  --blue:#1F4E79;
+  --white:#FFFFFF;
+}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#1f2937;
+  line-height:1.6;
+  background:#fff;
+}
+
+header{
+  background:var(--white);
+  border-bottom:1px solid #e5e7eb;
+  padding:14px 32px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{
+  height:46px;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--navy);
+  margin-left:22px;
+  font-weight:600;
+}
+
+.btn{
+  background:var(--navy);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:6px;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 32px;
+}
 
 .hero{
-  background:url('https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1400&q=80') center/cover;
+  background:linear-gradient(
+    rgba(11,44,74,0.75),
+    rgba(11,44,74,0.75)
+  ),
+  url('https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1400&q=80')
+  center/cover;
   color:#fff;
 }
-.hero-overlay{
-  background:rgba(0,0,0,0.6);
-  padding:100px 32px;
-}
-.hero h1{font-size:44px;margin-bottom:20px}
 
-.image-section{
-  background:url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=80') center/cover;
-  color:#fff;
+.hero h1{
+  font-size:44px;
+  margin-bottom:20px;
 }
-.image-overlay{
-  background:rgba(0,0,0,0.65);
-  padding:70px 32px;
+
+.accent{
+  color:var(--gold);
+}
+
+footer{
+  background:var(--navy);
+  color:#fff;
+  text-align:center;
+  padding:40px 20px;
+}
+
+footer small{
+  color:#d1d5db;
 }
 </style>
 </head>
@@ -41,34 +104,40 @@ footer{background:#0f172a;color:#fff;text-align:center;padding:40px}
 
 <header>
 <nav>
-<strong>Pathedge Investment Limited</strong>
-<div>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="contact.html" class="btn">Request Consultation</a>
-</div>
+  <div class="brand">
+    <img src="PATHEDGE_3D_LOGO (1).png" alt="Pathedge Investment Limited Logo">
+  </div>
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn">Request Consultation</a>
+  </div>
 </nav>
 </header>
 
 <section class="hero">
-<div class="hero-overlay">
-<h1>Driving Professional Growth Across Industries & Organisations</h1>
+<h1>
+Driving <span class="accent">Professional Growth</span><br>
+Across Industries & Organisations
+</h1>
+
 <p>
 Pathedge Investment Limited operates as an extension of our clients’ commercial
-departments, delivering structured business development, sales execution, and
-strategic growth support.
+departments, delivering structured business development, sales execution,
+strategic partnerships, and growth advisory.
 </p>
-</div>
 </section>
 
 <section>
 <h2>What We Do</h2>
 <p>
-We provide end-to-end business development support that complements internal teams
-and fills execution gaps where organisations require professional growth capability.
+We provide disciplined, execution-focused business development services that
+complement internal teams and unlock sustainable growth.
 </p>
+
 <ul>
 <li>Revenue growth & opportunity development</li>
 <li>Market entry & expansion strategies</li>
@@ -79,21 +148,19 @@ and fills execution gaps where organisations require professional growth capabil
 </ul>
 </section>
 
-<section class="image-section">
-<div class="image-overlay">
+<section>
 <h2>Professional Accreditation</h2>
 <p>
-<strong>Pathedge Investment Limited</strong> is a registered Corporate Member of the
-<strong>Zambia Institute of Marketing (ZIM)</strong>, operating in accordance with the
-Zambia Institute of Marketing Act No. 2 of 2022.
+<strong>Pathedge Investment Limited</strong> is a
+<strong>registered Corporate Member of the Zambia Institute of Marketing (ZIM)</strong>,
+operating in accordance with the Zambia Institute of Marketing Act No. 2 of 2022.
 </p>
-</div>
 </section>
 
 <footer>
 <p><strong>Pathedge Investment Limited</strong></p>
 <p>Registered Corporate Member – Zambia Institute of Marketing (ZIM)</p>
-<p>© 2026 All Rights Reserved</p>
+<small>© 2026 Pathedge Investment Limited. All Rights Reserved.</small>
 </footer>
 
 </body>
