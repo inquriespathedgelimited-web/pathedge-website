@@ -9,19 +9,30 @@
 
 <style>
 body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1f2937;line-height:1.6}
-header{border-bottom:1px solid #e5e7eb;padding:16px 32px;background:#fff}
+header{border-bottom:1px solid #e5e7eb;padding:16px 32px;background:#fff;position:sticky;top:0;z-index:100}
 nav{display:flex;justify-content:space-between;align-items:center}
 nav a{text-decoration:none;color:#1f2937;margin-left:20px;font-weight:600}
 .btn{background:#0f172a;color:#fff;padding:10px 18px;border-radius:6px}
 section{max-width:1100px;margin:auto;padding:70px 32px}
 footer{background:#0f172a;color:#fff;text-align:center;padding:40px}
-h1{font-size:42px;margin-bottom:20px}
-h2{margin-top:40px}
-.compliance{
-  background:#f9fafb;
-  border-left:4px solid #0f172a;
-  padding:20px;
-  margin-top:30px;
+
+.hero{
+  background:url('https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1400&q=80') center/cover;
+  color:#fff;
+}
+.hero-overlay{
+  background:rgba(0,0,0,0.6);
+  padding:100px 32px;
+}
+.hero h1{font-size:44px;margin-bottom:20px}
+
+.image-section{
+  background:url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=80') center/cover;
+  color:#fff;
+}
+.image-overlay{
+  background:rgba(0,0,0,0.65);
+  padding:70px 32px;
 }
 </style>
 </head>
@@ -41,80 +52,47 @@ h2{margin-top:40px}
 </nav>
 </header>
 
-<section>
+<section class="hero">
+<div class="hero-overlay">
 <h1>Driving Professional Growth Across Industries & Organisations</h1>
-
 <p>
-Pathedge Investment Limited is a business development and growth advisory firm that
-operates as an extension of our clients’ commercial departments. We support
-organisations of different sizes and across multiple industries to structure growth,
-generate revenue opportunities, build strategic partnerships, and execute commercial
-objectives professionally.
-</p>
-
-<p>
-Rather than offering generic consultancy, Pathedge embeds structured business
-development capability into organisations — strengthening sales execution, market
-entry, partnership development, tender positioning, and investment readiness.
-</p>
-</section>
-
-<section>
-<h2>What We Do</h2>
-
-<p>
-We provide end-to-end business development support that complements internal teams
-and fills capability gaps where organisations require professional execution,
-market access, or structured growth support.
-</p>
-
-<ul>
-<li>Revenue growth and opportunity development</li>
-<li>Market entry and expansion strategies</li>
-<li>Sales execution and commercial pipeline management</li>
-<li>Strategic partnerships and deal structuring</li>
-<li>Tender identification, positioning and management</li>
-<li>Investment and project advisory support</li>
-</ul>
-</section>
-
-<section>
-<h2>Professional Accreditation</h2>
-
-<div class="compliance">
-<p>
-<strong>Pathedge Investment Limited</strong> is a <strong>registered Corporate Member of the Zambia Institute of Marketing (ZIM)</strong>,
-operating in accordance with the Zambia Institute of Marketing Act No. 2 of 2022.
-</p>
-
-<p>
-This registration affirms our commitment to professional standards, ethical business
-development practices, and disciplined commercial execution.
+Pathedge Investment Limited operates as an extension of our clients’ commercial
+departments, delivering structured business development, sales execution, and
+strategic growth support.
 </p>
 </div>
 </section>
 
 <section>
-<h2>Who We Work With</h2>
-
+<h2>What We Do</h2>
+<p>
+We provide end-to-end business development support that complements internal teams
+and fills execution gaps where organisations require professional growth capability.
+</p>
 <ul>
-<li>Financial institutions and banks</li>
-<li>Construction and infrastructure firms</li>
-<li>Telecommunications companies</li>
-<li>SMEs and growing enterprises</li>
-<li>Large corporates and group businesses</li>
-<li>Investment and development projects</li>
+<li>Revenue growth & opportunity development</li>
+<li>Market entry & expansion strategies</li>
+<li>Sales execution & pipeline management</li>
+<li>Strategic partnerships & deal structuring</li>
+<li>Tender identification & management</li>
+<li>Investment & project advisory</li>
 </ul>
+</section>
+
+<section class="image-section">
+<div class="image-overlay">
+<h2>Professional Accreditation</h2>
+<p>
+<strong>Pathedge Investment Limited</strong> is a registered Corporate Member of the
+<strong>Zambia Institute of Marketing (ZIM)</strong>, operating in accordance with the
+Zambia Institute of Marketing Act No. 2 of 2022.
+</p>
+</div>
 </section>
 
 <footer>
 <p><strong>Pathedge Investment Limited</strong></p>
-<p>
-Registered Corporate Member – Zambia Institute of Marketing (ZIM)
-</p>
-<p>
-Business Development | Commercial Growth | Strategic Partnerships
-</p>
+<p>Registered Corporate Member – Zambia Institute of Marketing (ZIM)</p>
 <p>© 2026 All Rights Reserved</p>
 </footer>
 
