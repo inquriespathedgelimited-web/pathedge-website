@@ -36,13 +36,18 @@ nav{
   justify-content:space-between;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
+.brand-text{
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:1px;
 }
 
-.brand img{
-  height:48px;
+.brand-text .pat{
+  color:var(--gold);
+}
+
+.brand-text .hedge{
+  color:var(--navy);
 }
 
 nav a{
@@ -67,7 +72,7 @@ section{
 
 .hero{
   background:
-    linear-gradient(rgba(11,44,74,0.8), rgba(11,44,74,0.8)),
+    linear-gradient(rgba(11,44,74,0.85), rgba(11,44,74,0.85)),
     linear-gradient(90deg, var(--gold), var(--blue));
   color:#fff;
 }
@@ -98,10 +103,8 @@ footer small{
 
 <header>
 <nav>
-  <div class="brand">
-    <img 
-      src="https://raw.githubusercontent.com/inquriespathedgelimited-web/pathedge-website/main/PATHEDGE_3D_LOGO%20(1).png" 
-      alt="Pathedge Investment Limited Logo">
+  <div class="brand-text">
+    <span class="pat">PAT</span><span class="hedge">HEDGE</span>
   </div>
 
   <div>
