@@ -6,7 +6,7 @@
 
 <title>Contact Us | Pathedge Investment Limited</title>
 
-<meta name="description" content="Request a consultation with Pathedge Investment Limited for professional business development and growth advisory services.">
+<meta name="description" content="Request a consultation with Pathedge Investment Limited. We support organisations with professional business development and growth advisory services.">
 
 <style>
 :root{
@@ -60,9 +60,34 @@ nav a{
 
 /* HERO */
 .hero{
-  background:var(--navy);
+  position:relative;
+}
+
+.hero img{
+  width:100%;
+  height:55vh;
+  object-fit:cover;
+  display:block;
+}
+
+.hero-text{
+  position:absolute;
+  inset:0;
+  background:rgba(11,44,74,0.8);
   color:#fff;
-  padding:80px 32px;
+  display:flex;
+  align-items:center;
+}
+
+.hero-inner{
+  max-width:1100px;
+  margin:auto;
+  padding:0 32px;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:10px;
 }
 
 /* CONTENT */
@@ -72,11 +97,18 @@ section{
   padding:70px 32px;
 }
 
+.section-title{
+  color:var(--navy);
+  border-left:6px solid var(--gold);
+  padding-left:14px;
+  margin-bottom:20px;
+}
+
 .form-box{
   background:#f9fafb;
   border-left:6px solid var(--gold);
   padding:30px;
-  max-width:700px;
+  max-width:720px;
 }
 
 label{
@@ -106,7 +138,7 @@ button{
   cursor:pointer;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 .whatsapp-btn{
   position:fixed;
   bottom:20px;
@@ -117,7 +149,7 @@ button{
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  box-shadow:0 4px 10px rgba(0,0,0,0.25);
   z-index:1000;
 }
 
@@ -150,12 +182,24 @@ footer small{ color:#d1d5db; }
 </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<h1>Request a Consultation</h1>
-<p>Fill in the form below or chat with us instantly on WhatsApp.</p>
+  <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80" alt="African business professionals consultation">
+
+  <div class="hero-text">
+    <div class="hero-inner">
+      <h1>Contact Pathedge</h1>
+      <p>
+        Request a professional consultation or speak with our team to discuss
+        your organisation’s growth objectives.
+      </p>
+    </div>
+  </div>
 </div>
 
 <section>
+<h2 class="section-title">Request a Consultation</h2>
+
 <div class="form-box">
 <form action="https://formsubmit.co/inquriespathedgelimited@gmail.com" method="POST">
 
@@ -183,7 +227,7 @@ footer small{ color:#d1d5db; }
 </div>
 </section>
 
-<!-- WHATSAPP FLOATING BUTTON -->
+<!-- WHATSAPP BUTTON -->
 <a class="whatsapp-btn"
    href="https://wa.me/260960382538?text=Hello%20Pathedge%20Investment%20Limited,%20I%20would%20like%20to%20request%20a%20consultation."
    target="_blank">
