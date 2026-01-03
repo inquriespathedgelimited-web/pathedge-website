@@ -26,7 +26,7 @@ body{
 
 header{
   background:#fff;
-  border-bottom:1px solid #e5e7eb;
+  border-bottom:2px solid var(--gold);
   padding:14px 32px;
 }
 
@@ -68,10 +68,8 @@ section{
 
 .hero{
   background:
-    linear-gradient(rgba(11,44,74,0.7), rgba(11,44,74,0.7)),
-    url("https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1400&q=80");
-  background-size:cover;
-  background-position:center;
+    linear-gradient(rgba(11,44,74,0.8), rgba(11,44,74,0.8)),
+    linear-gradient(90deg, var(--gold), var(--blue));
   color:#fff;
 }
 
@@ -90,6 +88,10 @@ footer{
   text-align:center;
   padding:40px 20px;
 }
+
+footer small{
+  color:#d1d5db;
+}
 </style>
 </head>
 
@@ -98,7 +100,7 @@ footer{
 <header>
 <nav>
   <div class="brand">
-    <img src="PASTE_LOGO_RAW_URL_HERE" alt="Pathedge Investment Limited Logo">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." alt="Pathedge Investment Limited Logo">
   </div>
 
   <div>
@@ -148,7 +150,7 @@ operating in accordance with the Zambia Institute of Marketing Act No. 2 of 2022
 <footer>
 <p><strong>Pathedge Investment Limited</strong></p>
 <p>Registered Corporate Member – Zambia Institute of Marketing (ZIM)</p>
-<p>© 2026 All Rights Reserved</p>
+<small>© 2026 Pathedge Investment Limited. All Rights Reserved.</small>
 </footer>
 
 </body>
