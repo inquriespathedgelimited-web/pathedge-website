@@ -6,7 +6,7 @@
 
 <title>About Us | Pathedge Investment Limited</title>
 
-<meta name="description" content="Pathedge Investment Limited is a business development and growth advisory firm operating as an extension of organisations’ commercial departments.">
+<meta name="description" content="Pathedge Investment Limited is a business development and growth advisory firm operating as an extension of organisations’ commercial departments across industries in Zambia and Africa.">
 
 <style>
 :root{
@@ -60,18 +60,34 @@ nav a{
 
 /* HERO */
 .hero{
-  background:var(--navy);
+  position:relative;
+}
+
+.hero img{
+  width:100%;
+  height:60vh;
+  object-fit:cover;
+  display:block;
+}
+
+.hero-text{
+  position:absolute;
+  inset:0;
+  background:rgba(11,44,74,0.8);
   color:#fff;
-  padding:80px 32px;
+  display:flex;
+  align-items:center;
+}
+
+.hero-inner{
+  max-width:1100px;
+  margin:auto;
+  padding:0 32px;
 }
 
 .hero h1{
   font-size:42px;
-  margin-bottom:10px;
-}
-
-.hero p{
-  max-width:900px;
+  margin-bottom:15px;
 }
 
 /* CONTENT */
@@ -86,6 +102,14 @@ section{
   border-left:6px solid var(--gold);
   padding-left:14px;
   margin-bottom:20px;
+}
+
+.content-image{
+  width:100%;
+  max-height:320px;
+  object-fit:cover;
+  border-left:6px solid var(--gold);
+  margin:20px 0 30px 0;
 }
 
 /* FOOTER */
@@ -114,44 +138,79 @@ footer small{
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
     <a href="contact.html" class="btn">Request Consultation</a>
   </div>
 </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<h1>About Pathedge Investment Limited</h1>
-<p>
-A professional business development and growth advisory firm supporting organisations
-across industries and organisation sizes.
-</p>
+  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80" alt="Modern African city and business environment">
+
+  <div class="hero-text">
+    <div class="hero-inner">
+      <h1>About Pathedge Investment Limited</h1>
+      <p>
+        A professional business development and commercial growth advisory firm
+        supporting organisations across Zambia and Africa.
+      </p>
+    </div>
+  </div>
 </div>
 
+<!-- WHO WE ARE -->
 <section>
 <h2 class="section-title">Who We Are</h2>
+
+<img class="content-image"
+     src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80"
+     alt="African business professionals in discussion">
+
 <p>
-Pathedge Investment Limited is a Zambian business development and commercial growth
-advisory firm established to support organisations in achieving structured,
-sustainable, and professional growth.
+Pathedge Investment Limited is a Zambian business development and growth advisory
+firm established to support organisations in achieving structured, sustainable,
+and professional commercial growth.
 </p>
 
 <p>
 We operate as an <strong>extension of our clients’ commercial departments</strong>,
-providing execution capability across sales, partnerships, market development,
-tender positioning, and growth strategy.
+providing execution capability across business development, sales execution,
+market expansion, strategic partnerships, tender positioning, and growth strategy.
+</p>
+
+<p>
+Our approach is practical, execution-focused, and aligned with real business
+objectives rather than theoretical consultancy.
 </p>
 </section>
 
+<!-- OUR APPROACH -->
+<section>
+<h2 class="section-title">Our Approach</h2>
+
+<img class="content-image"
+     src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80"
+     alt="Corporate strategy and consulting meeting">
+
+<p>
+We work closely with internal leadership and commercial teams to understand
+organisational goals, market realities, and execution gaps.
+</p>
+
+<p>
+Our engagements are designed to integrate seamlessly with existing structures,
+ensuring accountability, measurable outcomes, and long-term value creation.
+</p>
+</section>
+
+<!-- MISSION & VISION -->
 <section>
 <h2 class="section-title">Our Mission</h2>
 <p>
 To enable organisations to grow professionally through disciplined business
 development execution, ethical engagement, and long-term commercial partnerships.
 </p>
-</section>
 
-<section>
 <h2 class="section-title">Our Vision</h2>
 <p>
 To be a trusted regional partner for organisations seeking structured growth,
@@ -159,8 +218,14 @@ market access, and commercial execution across Africa.
 </p>
 </section>
 
+<!-- ACCREDITATION -->
 <section>
 <h2 class="section-title">Professional Accreditation</h2>
+
+<img class="content-image"
+     src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80"
+     alt="Professional corporate office building">
+
 <p>
 <strong>Pathedge Investment Limited</strong> is a
 <strong>registered Corporate Member of the Zambia Institute of Marketing (ZIM)</strong>,
@@ -181,3 +246,4 @@ business development practices, and disciplined commercial execution.
 
 </body>
 </html>
+
