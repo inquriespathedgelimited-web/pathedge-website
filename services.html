@@ -58,20 +58,36 @@ nav a{
   border-radius:6px;
 }
 
-/* HERO */
+/* HERO IMAGE */
 .hero{
-  background:var(--navy);
+  position:relative;
+}
+
+.hero img{
+  width:100%;
+  height:60vh;
+  object-fit:cover;
+  display:block;
+}
+
+.hero-text{
+  position:absolute;
+  inset:0;
+  background:rgba(11,44,74,0.8);
   color:#fff;
-  padding:80px 32px;
+  display:flex;
+  align-items:center;
+}
+
+.hero-inner{
+  max-width:1100px;
+  margin:auto;
+  padding:0 32px;
 }
 
 .hero h1{
   font-size:42px;
-  margin-bottom:10px;
-}
-
-.hero p{
-  max-width:900px;
+  margin-bottom:15px;
 }
 
 /* CONTENT */
@@ -82,14 +98,19 @@ section{
 }
 
 .service{
-  margin-bottom:50px;
+  margin-bottom:60px;
+}
+
+.service img{
+  width:100%;
+  max-height:320px;
+  object-fit:cover;
+  border-left:6px solid var(--gold);
+  margin-bottom:20px;
 }
 
 .service h2{
   color:var(--navy);
-  border-left:6px solid var(--gold);
-  padding-left:14px;
-  margin-bottom:10px;
 }
 
 /* FOOTER */
@@ -100,9 +121,7 @@ footer{
   padding:40px 20px;
 }
 
-footer small{
-  color:#d1d5db;
-}
+footer small{ color:#d1d5db; }
 </style>
 </head>
 
@@ -118,68 +137,53 @@ footer small{
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
     <a href="contact.html" class="btn">Request Consultation</a>
   </div>
 </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<h1>Our Services</h1>
-<p>
-We operate as an extension of our clients’ commercial departments, delivering
-structured, execution-focused business development and growth support.
-</p>
+  <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80" alt="African business professionals meeting">
+
+  <div class="hero-text">
+    <div class="hero-inner">
+      <h1>Our Services</h1>
+      <p>
+        We operate as an extension of our clients’ commercial departments,
+        delivering structured and execution-focused growth support.
+      </p>
+    </div>
+  </div>
 </div>
 
 <section>
 
 <div class="service">
-<h2>B2B Lead Generation & Market Development</h2>
-<p>
-We identify, qualify, and engage decision-makers across targeted industries,
-helping organisations build consistent and sustainable revenue pipelines.
-</p>
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" alt="Business strategy meeting Africa">
+  <h2>B2B Lead Generation & Market Development</h2>
+  <p>
+    We identify, qualify, and engage decision-makers across targeted industries,
+    helping organisations build sustainable revenue pipelines.
+  </p>
 </div>
 
 <div class="service">
-<h2>Dormant Account Activation & Relationship Growth</h2>
-<p>
-We re-engage inactive or underperforming accounts through structured relationship
-management, value-based engagement, and performance tracking.
-</p>
+  <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80" alt="African corporate consulting session">
+  <h2>Sales Execution & Commercial Pipeline Management</h2>
+  <p>
+    We support disciplined sales execution by structuring pipelines, tracking
+    opportunities, and improving conversion rates.
+  </p>
 </div>
 
 <div class="service">
-<h2>Sales Execution & Commercial Pipeline Management</h2>
-<p>
-We support disciplined sales execution by structuring pipelines, tracking
-opportunities, improving conversion rates, and strengthening internal processes.
-</p>
-</div>
-
-<div class="service">
-<h2>Tender Identification, Positioning & Management</h2>
-<p>
-We source, analyse, and manage public and private sector tenders, supporting
-strategic positioning, compliance, partner coordination, and bid execution.
-</p>
-</div>
-
-<div class="service">
-<h2>Strategic Partnerships & Deal Structuring</h2>
-<p>
-We facilitate structured partnerships while protecting commercial interests
-through confidentiality and non-circumvention frameworks.
-</p>
-</div>
-
-<div class="service">
-<h2>Investment & Project Advisory</h2>
-<p>
-We provide advisory support for construction, infrastructure, and development
-projects, including partner identification, commercial structuring, and growth planning.
-</p>
+  <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1600&q=80" alt="Professional partnership handshake">
+  <h2>Strategic Partnerships & Deal Structuring</h2>
+  <p>
+    We facilitate structured partnerships while protecting commercial interests
+    through confidentiality and non-circumvention frameworks.
+  </p>
 </div>
 
 </section>
