@@ -6,13 +6,12 @@
 
 <title>Services | Pathedge Investment Limited</title>
 
-<meta name="description" content="Pathedge Investment Limited provides professional business development, sales execution, and growth advisory services across industries and organisation sizes.">
+<meta name="description" content="Pathedge Investment Limited provides professional business development, sales execution, and growth advisory services across industries.">
 
 <style>
 :root{
   --gold:#C9A227;
   --navy:#0B2C4A;
-  --blue:#1F4E79;
 }
 
 body{
@@ -23,10 +22,10 @@ body{
   background:#fff;
 }
 
-/* Header */
+/* HEADER */
 header{
   background:#ffffff;
-  border-bottom:3px solid var(--gold);
+  border-bottom:4px solid var(--gold);
   padding:18px 32px;
 }
 
@@ -42,13 +41,8 @@ nav{
   letter-spacing:1px;
 }
 
-.brand .pat{
-  color:var(--gold);
-}
-
-.brand .hedge{
-  color:var(--navy);
-}
+.brand .pat{ color:var(--gold); }
+.brand .hedge{ color:var(--navy); }
 
 nav a{
   text-decoration:none;
@@ -64,30 +58,41 @@ nav a{
   border-radius:6px;
 }
 
-/* Sections */
+/* HERO */
+.hero{
+  background:var(--navy);
+  color:#fff;
+  padding:80px 32px;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  max-width:900px;
+}
+
+/* CONTENT */
 section{
   max-width:1100px;
   margin:auto;
   padding:70px 32px;
 }
 
-.hero{
-  background:
-    linear-gradient(rgba(11,44,74,0.85), rgba(11,44,74,0.85)),
-    linear-gradient(90deg, var(--gold), var(--blue));
-  color:#fff;
-}
-
-.hero h1{
-  font-size:42px;
-  margin-bottom:20px;
-}
-
 .service{
-  margin-bottom:40px;
+  margin-bottom:50px;
 }
 
-/* Footer */
+.service h2{
+  color:var(--navy);
+  border-left:6px solid var(--gold);
+  padding-left:14px;
+  margin-bottom:10px;
+}
+
+/* FOOTER */
 footer{
   background:var(--navy);
   color:#fff;
@@ -119,15 +124,16 @@ footer small{
 </nav>
 </header>
 
-<section class="hero">
+<div class="hero">
 <h1>Our Services</h1>
 <p>
-We operate as an extension of our clients’ commercial departments, providing
+We operate as an extension of our clients’ commercial departments, delivering
 structured, execution-focused business development and growth support.
 </p>
-</section>
+</div>
 
 <section>
+
 <div class="service">
 <h2>B2B Lead Generation & Market Development</h2>
 <p>
@@ -163,8 +169,8 @@ strategic positioning, compliance, partner coordination, and bid execution.
 <div class="service">
 <h2>Strategic Partnerships & Deal Structuring</h2>
 <p>
-We facilitate structured partnerships between organisations while protecting
-commercial interests through confidentiality and non-circumvention frameworks.
+We facilitate structured partnerships while protecting commercial interests
+through confidentiality and non-circumvention frameworks.
 </p>
 </div>
 
@@ -175,6 +181,7 @@ We provide advisory support for construction, infrastructure, and development
 projects, including partner identification, commercial structuring, and growth planning.
 </p>
 </div>
+
 </section>
 
 <footer>
