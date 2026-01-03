@@ -65,23 +65,11 @@ nav a{
   padding:80px 32px;
 }
 
-.hero h1{
-  font-size:42px;
-  margin-bottom:10px;
-}
-
 /* CONTENT */
 section{
   max-width:1100px;
   margin:auto;
   padding:70px 32px;
-}
-
-.section-title{
-  color:var(--navy);
-  border-left:6px solid var(--gold);
-  padding-left:14px;
-  margin-bottom:20px;
 }
 
 .form-box{
@@ -103,12 +91,9 @@ input, textarea{
   margin-top:6px;
   border:1px solid #d1d5db;
   border-radius:4px;
-  font-family:inherit;
 }
 
-textarea{
-  min-height:120px;
-}
+textarea{ min-height:120px; }
 
 button{
   margin-top:20px;
@@ -121,8 +106,19 @@ button{
   cursor:pointer;
 }
 
-button:hover{
-  opacity:0.9;
+/* WHATSAPP BUTTON */
+.whatsapp-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:14px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  z-index:1000;
 }
 
 /* FOOTER */
@@ -133,9 +129,7 @@ footer{
   padding:40px 20px;
 }
 
-footer small{
-  color:#d1d5db;
-}
+footer small{ color:#d1d5db; }
 </style>
 </head>
 
@@ -158,43 +152,43 @@ footer small{
 
 <div class="hero">
 <h1>Request a Consultation</h1>
-<p>Tell us about your organisation and how we can support your growth.</p>
+<p>Fill in the form below or chat with us instantly on WhatsApp.</p>
 </div>
 
 <section>
 <div class="form-box">
-<h2 class="section-title">Consultation Request Form</h2>
-
 <form action="https://formsubmit.co/inquriespathedgelimited@gmail.com" method="POST">
 
-  <!-- Disable captcha -->
-  <input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Consultation Request – Pathedge Website">
+<input type="hidden" name="_next" value="https://inquriespathedgelimited-web.github.io/pathedge-website/">
 
-  <!-- Email subject -->
-  <input type="hidden" name="_subject" value="New Consultation Request – Pathedge Website">
+<label>Full Name</label>
+<input type="text" name="name" required>
 
-  <!-- Success redirect -->
-  <input type="hidden" name="_next" value="https://inquriespathedgelimited-web.github.io/pathedge-website/">
+<label>Company / Organisation</label>
+<input type="text" name="company" required>
 
-  <label for="name">Full Name</label>
-  <input type="text" name="name" required>
+<label>Email Address</label>
+<input type="email" name="email" required>
 
-  <label for="company">Company / Organisation</label>
-  <input type="text" name="company" required>
+<label>Phone Number</label>
+<input type="text" name="phone">
 
-  <label for="email">Email Address</label>
-  <input type="email" name="email" required>
+<label>Brief Description of Your Needs</label>
+<textarea name="message" required></textarea>
 
-  <label for="phone">Phone Number</label>
-  <input type="text" name="phone">
-
-  <label for="message">Brief Description of Your Needs</label>
-  <textarea name="message" required></textarea>
-
-  <button type="submit">Submit Consultation Request</button>
+<button type="submit">Submit Consultation Request</button>
 </form>
 </div>
 </section>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a class="whatsapp-btn"
+   href="https://wa.me/260960382538?text=Hello%20Pathedge%20Investment%20Limited,%20I%20would%20like%20to%20request%20a%20consultation."
+   target="_blank">
+Chat on WhatsApp
+</a>
 
 <footer>
 <p><strong>Pathedge Investment Limited</strong></p>
