@@ -6,7 +6,7 @@
 
 <title>Contact Us | Pathedge Investment Limited</title>
 
-<meta name="description" content="Contact Pathedge Investment Limited to request a consultation or discuss professional business development and growth advisory services.">
+<meta name="description" content="Request a consultation with Pathedge Investment Limited for professional business development and growth advisory services.">
 
 <style>
 :root{
@@ -70,10 +70,6 @@ nav a{
   margin-bottom:10px;
 }
 
-.hero p{
-  max-width:900px;
-}
-
 /* CONTENT */
 section{
   max-width:1100px;
@@ -88,11 +84,45 @@ section{
   margin-bottom:20px;
 }
 
-.contact-box{
+.form-box{
   background:#f9fafb;
   border-left:6px solid var(--gold);
   padding:30px;
-  margin-bottom:40px;
+  max-width:700px;
+}
+
+label{
+  display:block;
+  margin-top:15px;
+  font-weight:600;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border:1px solid #d1d5db;
+  border-radius:4px;
+  font-family:inherit;
+}
+
+textarea{
+  min-height:120px;
+}
+
+button{
+  margin-top:20px;
+  background:var(--navy);
+  color:#fff;
+  border:none;
+  padding:14px 22px;
+  font-size:16px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:0.9;
 }
 
 /* FOOTER */
@@ -121,60 +151,49 @@ footer small{
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
     <a href="contact.html" class="btn">Request Consultation</a>
   </div>
 </nav>
 </header>
 
 <div class="hero">
-<h1>Contact Us</h1>
-<p>
-Get in touch with Pathedge Investment Limited to discuss your growth objectives
-or request a professional consultation.
-</p>
+<h1>Request a Consultation</h1>
+<p>Tell us about your organisation and how we can support your growth.</p>
 </div>
 
 <section>
-<h2 class="section-title">Request a Consultation</h2>
-<p>
-We work with organisations across industries and sizes.  
-To engage with Pathedge Investment Limited, please contact us using the details below.
-</p>
-</section>
+<div class="form-box">
+<h2 class="section-title">Consultation Request Form</h2>
 
-<section>
-<div class="contact-box">
-<h2 class="section-title">Contact Information</h2>
+<form action="https://formsubmit.co/inquriespathedgelimited@gmail.com" method="POST">
 
-<p><strong>Company Name:</strong><br>
-Pathedge Investment Limited</p>
+  <!-- Disable captcha -->
+  <input type="hidden" name="_captcha" value="false">
 
-<p><strong>Email:</strong><br>
-inquriespathedgelimited@gmail.com<br>
-consult.pathedge@outlook.com</p>
+  <!-- Email subject -->
+  <input type="hidden" name="_subject" value="New Consultation Request – Pathedge Website">
 
-<p><strong>Phone Numbers:</strong><br>
-+260 960 382 538<br>
-+260 776 223 320<br>
-+260 950 003 201</p>
+  <!-- Success redirect -->
+  <input type="hidden" name="_next" value="https://inquriespathedgelimited-web.github.io/pathedge-website/">
 
-<p><strong>Office Location:</strong><br>
-Church House, Cairo Road<br>
-Lusaka, Zambia</p>
+  <label for="name">Full Name</label>
+  <input type="text" name="name" required>
 
-<p><strong>Preferred Contact Method:</strong><br>
-Email and Phone</p>
+  <label for="company">Company / Organisation</label>
+  <input type="text" name="company" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" name="email" required>
+
+  <label for="phone">Phone Number</label>
+  <input type="text" name="phone">
+
+  <label for="message">Brief Description of Your Needs</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Submit Consultation Request</button>
+</form>
 </div>
-</section>
-
-<section>
-<h2 class="section-title">Professional Accreditation</h2>
-<p>
-<strong>Pathedge Investment Limited</strong> is a
-<strong>registered Corporate Member of the Zambia Institute of Marketing (ZIM)</strong>,
-operating in accordance with the Zambia Institute of Marketing Act No. 2 of 2022.
-</p>
 </section>
 
 <footer>
