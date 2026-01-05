@@ -274,3 +274,29 @@ footer p {
     margin: 8px 10px 0 0;
   }
 }
+/* =========================
+   FINAL IMAGE CONTROL
+   ========================= */
+
+/* Hero banners */
+.hero-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+/* Section images */
+.section-image {
+  max-width: 900px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Small supporting images */
+.small-image {
+  max-width: 700px;
+  margin: 25px auto;
+  display: block;
+  border-radius: 6px;
+}
