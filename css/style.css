@@ -123,3 +123,33 @@ footer {
   padding: 25px 0;
   text-align: center;
 }
+/* =========================
+   GLOBAL IMAGE CONTROL
+   ========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section images */
+.section-image {
+  margin: 30px 0;
+  border-radius: 6px;
+}
+
+/* Large banner-style images */
+.banner-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Smaller content images */
+.content-image {
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 6px;
+}
