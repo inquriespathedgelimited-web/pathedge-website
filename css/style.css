@@ -300,3 +300,38 @@ footer p {
   display: block;
   border-radius: 6px;
 }
+/* =========================
+   PATHEDGE BRAND POLISH
+   ========================= */
+
+:root {
+  --pathedge-blue: #0b3c6d;
+  --pathedge-gold: #c9a23f;
+}
+
+h1, h2, h3 {
+  color: var(--pathedge-blue);
+}
+
+a {
+  color: var(--pathedge-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--pathedge-gold);
+}
+
+button {
+  background-color: var(--pathedge-blue);
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--pathedge-gold);
+  color: #000000;
+}
